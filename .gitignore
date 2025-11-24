@@ -1,0 +1,56 @@
+# Create .gitignore file
+cat > .gitignore << 'EOF'
+# OSX
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# React Native
+.expo/
+.expo-shared/
+
+# Android
+android/app/build/
+android/build/
+android/.gradle/
+android/app/release/
+android/app/debug/
+*.apk
+*.ap_
+*.aab
+
+# iOS
+ios/build/
+ios/Pods/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Bundle
+*.jsbundle
+
+# CocoaPods
+ios/Pods/
+
+# Fastlane
+*/fastlane/report.xml
+*/fastlane/Preview.html
+*/fastlane/screenshots
+*/fastlane/test_output
+
+# VS Code
+.vscode/
+
+# Android Studio
+*.iml
+.idea/
+.gradle/
+local.properties
+
+# Misc
+.env
+.env.local
+EOF
